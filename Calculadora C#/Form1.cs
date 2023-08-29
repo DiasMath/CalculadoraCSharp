@@ -85,68 +85,29 @@ namespace Calculadora_C_
         // Botao de Soma
         private void button4_Click(object sender, EventArgs e)
         {
-            if (txtResultado.Text != "")
-            {
-                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
-                txtResultado.Text = "";
-                operacao = "soma";
-                lblOperacao.Text = "+";
 
-            }
-            else
-            {
-                MessageBox.Show("Informe um valor para realizar a operação.");
-            }
+            validacaoOperacao("soma", "+");
         }
 
         // Botao de Subtração
         private void button7_Click(object sender, EventArgs e)
         {
-            if (txtResultado.Text != "")
-            {
-                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
-                txtResultado.Text = "";
-                operacao = "subtracao";
-                lblOperacao.Text = "-";
 
-            }
-            else
-            {
-                MessageBox.Show("Informe um valor para realizar a operação.");
-            }
+            validacaoOperacao("subtracao", "-");
         }
 
         // Botao de Multiplicação
         private void button14_Click(object sender, EventArgs e)
         {
-            if (txtResultado.Text != "")
-            {
-                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
-                txtResultado.Text = "";
-                operacao = "mult";
-                lblOperacao.Text = "X";
 
-            }
-            else
-            {
-                MessageBox.Show("Informe um valor para realizar a operação.");
-            }
+            validacaoOperacao("mult", "X");
         }
 
         // Botao de Divisão
         private void button18_Click(object sender, EventArgs e)
         {
-            if(txtResultado.Text != "")
-            {
-                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
-                txtResultado.Text = "";
-                operacao = "divisao";
-                lblOperacao.Text = "/";
 
-            } else
-            {
-                MessageBox.Show("Informe um valor para realizar a operação.");
-            }
+            validacaoOperacao("divisao", "/");
         }
 
         // Botao CE
@@ -202,6 +163,22 @@ namespace Calculadora_C_
                         break;
                 }
 
+            }
+        }
+
+        public void validacaoOperacao(string operacaoMat, string simboloOperacao)
+        {
+            if (txtResultado.Text != "")
+            {
+                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+                txtResultado.Text = "";
+                operacao = operacaoMat;
+                lblOperacao.Text = simboloOperacao;
+
+            }
+            else
+            {
+                MessageBox.Show("Informe um valor para realizar a operação.");
             }
         }
     }
