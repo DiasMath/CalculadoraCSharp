@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Calculadora_C_
 {
-    public partial class Form1 : Form
+    public partial class Corpo : Form
     {
-        public Form1()
+        public Corpo()
         {
             InitializeComponent();
         }

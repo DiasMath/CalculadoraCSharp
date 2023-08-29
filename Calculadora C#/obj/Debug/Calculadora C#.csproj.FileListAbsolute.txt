@@ -3,9 +3,9 @@ C:\Users\MATHEUS\OneDrive\Área de Trabalho\Projetos\Calculadora C#\Calculadora 
 C:\Users\MATHEUS\OneDrive\Área de Trabalho\Projetos\Calculadora C#\Calculadora C#\Calculadora C#\bin\Debug\Calculadora C#.pdb
 C:\Users\MATHEUS\OneDrive\Área de Trabalho\Projetos\Calculadora C#\Calculadora C#\Calculadora C#\obj\Debug\Calculadora C#.csproj.AssemblyReference.cache
 C:\Users\MATHEUS\OneDrive\Área de Trabalho\Projetos\Calculadora C#\Calculadora C#\Calculadora C#\obj\Debug\Calculadora C#.csproj.SuggestedBindingRedirects.cache
-C:\Users\MATHEUS\OneDrive\Área de Trabalho\Projetos\Calculadora C#\Calculadora C#\Calculadora C#\obj\Debug\Calculadora_C_.Form1.resources
 C:\Users\MATHEUS\OneDrive\Área de Trabalho\Projetos\Calculadora C#\Calculadora C#\Calculadora C#\obj\Debug\Calculadora_C_.Properties.Resources.resources
 C:\Users\MATHEUS\OneDrive\Área de Trabalho\Projetos\Calculadora C#\Calculadora C#\Calculadora C#\obj\Debug\Calculadora C#.csproj.GenerateResource.cache
 C:\Users\MATHEUS\OneDrive\Área de Trabalho\Projetos\Calculadora C#\Calculadora C#\Calculadora C#\obj\Debug\Calculadora C#.csproj.CoreCompileInputs.cache
 C:\Users\MATHEUS\OneDrive\Área de Trabalho\Projetos\Calculadora C#\Calculadora C#\Calculadora C#\obj\Debug\Calculadora C#.exe
 C:\Users\MATHEUS\OneDrive\Área de Trabalho\Projetos\Calculadora C#\Calculadora C#\Calculadora C#\obj\Debug\Calculadora C#.pdb
+C:\Users\MATHEUS\OneDrive\Área de Trabalho\Projetos\Calculadora C#\Calculadora C#\Calculadora C#\obj\Debug\Calculadora_C_.Corpo.resources
