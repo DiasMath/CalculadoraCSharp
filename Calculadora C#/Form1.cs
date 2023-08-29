@@ -25,89 +25,98 @@ namespace Calculadora_C_
         // Botao 0
         private void button16_Click(object sender, EventArgs e)
         {
-            txtResultado.Text += "0";
+
+            AtribuirValorBotao("0");
         }
 
         // Botao 1
         private void button11_Click(object sender, EventArgs e)
         {
-            txtResultado.Text += "1";
+            AtribuirValorBotao("1");
         }
 
         // Botao 2
         private void button12_Click(object sender, EventArgs e)
         {
-            txtResultado.Text += "2";
+
+            AtribuirValorBotao("2");
         }
 
         // Botao 3
         private void button13_Click(object sender, EventArgs e)
         {
-            txtResultado.Text += "3";
+
+            AtribuirValorBotao("3");
         }
 
         // Botao 4
         private void button10_Click(object sender, EventArgs e)
         {
-            txtResultado.Text += "4";
+
+            AtribuirValorBotao("4");
         }
 
         // Botao 5
         private void button9_Click(object sender, EventArgs e)
         {
-            txtResultado.Text += "5";
+
+            AtribuirValorBotao("5");
         }
 
         // Botao 6
         private void button8_Click(object sender, EventArgs e)
         {
-            txtResultado.Text += "6";
+
+            AtribuirValorBotao("6");
         }
 
         // Botao 7
         private void button1_Click(object sender, EventArgs e)
         {
-            txtResultado.Text += "7";
+
+            AtribuirValorBotao("7");
         }
 
         // Botao 8
         private void button2_Click(object sender, EventArgs e)
         {
-            txtResultado.Text += "8";
+
+            AtribuirValorBotao("8");
         }
 
         // Botao 9
         private void button3_Click(object sender, EventArgs e)
         {
-            txtResultado.Text += "9";
+
+            AtribuirValorBotao("9");
         }
 
         // Botao de Soma
         private void button4_Click(object sender, EventArgs e)
         {
 
-            validacaoOperacao("soma", "+");
+            ValidarOperacao("soma", "+");
         }
 
         // Botao de Subtração
         private void button7_Click(object sender, EventArgs e)
         {
 
-            validacaoOperacao("subtracao", "-");
+            ValidarOperacao("subtracao", "-");
         }
 
         // Botao de Multiplicação
         private void button14_Click(object sender, EventArgs e)
         {
 
-            validacaoOperacao("mult", "X");
+            ValidarOperacao("mult", "X");
         }
 
         // Botao de Divisão
         private void button18_Click(object sender, EventArgs e)
         {
 
-            validacaoOperacao("divisao", "/");
+            ValidarOperacao("divisao", "/");
         }
 
         // Botao CE
@@ -166,13 +175,13 @@ namespace Calculadora_C_
             }
         }
 
-        public void validacaoOperacao(string operacaoMat, string simboloOperacao)
+        public void ValidarOperacao(string nomeOperacao, string simboloOperacao)
         {
             if (txtResultado.Text != "")
             {
                 valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
                 txtResultado.Text = "";
-                operacao = operacaoMat;
+                operacao = nomeOperacao;
                 lblOperacao.Text = simboloOperacao;
 
             }
@@ -180,6 +189,16 @@ namespace Calculadora_C_
             {
                 MessageBox.Show("Informe um valor para realizar a operação.");
             }
+        }
+
+        public void AtribuirValorBotao(string valorBotao)
+        {
+            txtResultado.Text += valorBotao;
+        }
+
+        public void OperacaoMatematica()
+        {
+
         }
     }
 }
