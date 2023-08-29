@@ -22,6 +22,12 @@ namespace Calculadora_C_
             InitializeComponent();
         }
 
+        // Botao Ponto
+        private void button17_Click(object sender, EventArgs e)
+        {
+            AtribuirValorBotao(".");
+        }
+
         // Botao 0
         private void button16_Click(object sender, EventArgs e)
         {
@@ -195,11 +201,7 @@ namespace Calculadora_C_
         {
             txtResultado.Text += valorBotao;
         }
-
-        public void OperacaoMatematica()
-        {
-
-        }
     }
 }
+
 
