@@ -5,12 +5,18 @@
 # Aprendizados
  * Utilização do Windows Forms;
  * Criação de métodos no lugar de if elses para seguir o DRY(Don't repeat yourself);
- * Funçoes de conversão como o `.Parse` e `Convert.ToString()`;
+ * Funçoes de conversão como o `.Parse`, `Convert.ToString()`, `Convert.ToDecimal()`;
  * Uso de `MessageBox.Show()` para enviar um alerta ao usuário;
+ * Uso de `enum` e propriedades de OOP;
  * Criação do layout da calculadora;
  * Uso do GIT para controlar o versionamento do código.
 
-# Layout do Projeto no Win Forms
+# Layout e Demonstração do Projeto no Win Forms
 
-![image](https://github.com/DiasMath/CalculadoraCSharp/assets/92406256/7743edff-352b-4c8d-9969-fb6cd5909529)
+![Animação](https://github.com/DiasMath/CalculadoraCSharp/assets/92406256/ffad8df0-201b-4b63-add3-3e61b0ada351)
+
+# Validações
+
+
+
 
