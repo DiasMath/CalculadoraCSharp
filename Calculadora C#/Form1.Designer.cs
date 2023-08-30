@@ -43,7 +43,7 @@
             this.btnUm = new System.Windows.Forms.Button();
             this.btnDois = new System.Windows.Forms.Button();
             this.btnTres = new System.Windows.Forms.Button();
-            this.btnMult = new System.Windows.Forms.Button();
+            this.btnMultiplicacao = new System.Windows.Forms.Button();
             this.btnIgual = new System.Windows.Forms.Button();
             this.btnZero = new System.Windows.Forms.Button();
             this.btnPonto = new System.Windows.Forms.Button();
@@ -197,15 +197,15 @@
             this.btnTres.UseVisualStyleBackColor = true;
             this.btnTres.Click += new System.EventHandler(this.btnTres_Click);
             // 
-            // btnMult
+            // btnMultiplicacao
             // 
-            this.btnMult.Location = new System.Drawing.Point(222, 159);
-            this.btnMult.Name = "btnMult";
-            this.btnMult.Size = new System.Drawing.Size(64, 50);
-            this.btnMult.TabIndex = 15;
-            this.btnMult.Text = "X";
-            this.btnMult.UseVisualStyleBackColor = true;
-            this.btnMult.Click += new System.EventHandler(this.btnMult_Click);
+            this.btnMultiplicacao.Location = new System.Drawing.Point(222, 159);
+            this.btnMultiplicacao.Name = "btnMultiplicacao";
+            this.btnMultiplicacao.Size = new System.Drawing.Size(64, 50);
+            this.btnMultiplicacao.TabIndex = 15;
+            this.btnMultiplicacao.Text = "X";
+            this.btnMultiplicacao.UseVisualStyleBackColor = true;
+            this.btnMultiplicacao.Click += new System.EventHandler(this.btnMultiplicacao_Click);
             // 
             // btnIgual
             // 
@@ -258,7 +258,7 @@
             this.Controls.Add(this.btnPonto);
             this.Controls.Add(this.btnZero);
             this.Controls.Add(this.btnIgual);
-            this.Controls.Add(this.btnMult);
+            this.Controls.Add(this.btnMultiplicacao);
             this.Controls.Add(this.btnTres);
             this.Controls.Add(this.btnDois);
             this.Controls.Add(this.btnUm);
@@ -300,7 +300,7 @@
         private System.Windows.Forms.Button btnUm;
         private System.Windows.Forms.Button btnDois;
         private System.Windows.Forms.Button btnTres;
-        private System.Windows.Forms.Button btnMult;
+        private System.Windows.Forms.Button btnMultiplicacao;
         private System.Windows.Forms.Button btnIgual;
         private System.Windows.Forms.Button btnZero;
         private System.Windows.Forms.Button btnPonto;

@@ -112,7 +112,7 @@ namespace Calculadora_C_
         }
 
         // Botao de Multiplicação
-        private void btnMult_Click(object sender, EventArgs e)
+        private void btnMultiplicacao_Click(object sender, EventArgs e)
         {
 
             ValidarOperacao("mult", "X");
