@@ -33,7 +33,7 @@ namespace Calculadora_C_
         }
 
         // Botao Virgula
-        private void btnVirgula_Click(object sender, EventArgs e)
+        private void BtnVirgula_Click(object sender, EventArgs e)
         {
             if (!txtResultado.Text.Contains(","))
             {
@@ -42,7 +42,7 @@ namespace Calculadora_C_
         }
 
         // Botao 0
-        private void btnZero_Click(object sender, EventArgs e)
+        private void BtnZero_Click(object sender, EventArgs e)
         {
 
             if (txtResultado.Text == "" || txtResultado.Text != "0")
@@ -52,110 +52,103 @@ namespace Calculadora_C_
         }
 
         // Botao 1
-        private void btnUm_Click(object sender, EventArgs e)
+        private void BtnUm_Click(object sender, EventArgs e)
         {
             AtribuirValorBotao("1");
         }
 
         // Botao 2
-        private void btnDois_Click(object sender, EventArgs e)
+        private void BtnDois_Click(object sender, EventArgs e)
         {
 
             AtribuirValorBotao("2");
         }
 
         // Botao 3
-        private void btnTres_Click(object sender, EventArgs e)
+        private void BtnTres_Click(object sender, EventArgs e)
         {
 
             AtribuirValorBotao("3");
         }
 
         // Botao 4
-        private void btnQuatro_Click(object sender, EventArgs e)
+        private void BtnQuatro_Click(object sender, EventArgs e)
         {
 
             AtribuirValorBotao("4");
         }
 
         // Botao 5
-        private void btnCinco_Click(object sender, EventArgs e)
+        private void BtnCinco_Click(object sender, EventArgs e)
         {
 
             AtribuirValorBotao("5");
         }
 
         // Botao 6
-        private void btnSeis_Click(object sender, EventArgs e)
+        private void BtnSeis_Click(object sender, EventArgs e)
         {
 
             AtribuirValorBotao("6");
         }
 
         // Botao 7
-        private void btnSete_Click(object sender, EventArgs e)
+        private void BtnSete_Click(object sender, EventArgs e)
         {
 
             AtribuirValorBotao("7");
         }
 
         // Botao 8
-        private void btnOito_Click(object sender, EventArgs e)
+        private void BtnOito_Click(object sender, EventArgs e)
         {
 
             AtribuirValorBotao("8");
         }
 
         // Botao 9
-        private void btnNove_Click(object sender, EventArgs e)
+        private void BtnNove_Click(object sender, EventArgs e)
         {
 
             AtribuirValorBotao("9");
         }
 
         // Botao de Adição
-        private void btnAdicao_Click(object sender, EventArgs e)
+        private void BtnAdicao_Click(object sender, EventArgs e)
         {
 
             ValidarOperacao(Operacao.Adicao, "+");
         }
 
         // Botao de Subtração
-        private void btnSubtracao_Click(object sender, EventArgs e)
+        private void BtnSubtracao_Click(object sender, EventArgs e)
         {
 
             ValidarOperacao(Operacao.Subtracao, "-");
         }
 
         // Botao de Multiplicação
-        private void btnMultiplicacao_Click(object sender, EventArgs e)
+        private void BtnMultiplicacao_Click(object sender, EventArgs e)
         {
 
             ValidarOperacao(Operacao.Multiplicacao, "X");
         }
 
         // Botao de Divisão
-        private void btnDivisao_Click(object sender, EventArgs e)
+        private void BtnDivisao_Click(object sender, EventArgs e)
         {
 
             ValidarOperacao(Operacao.Divisao, "/");
         }
 
-        // Botao CE
-        private void btnCE_Click(object sender, EventArgs e)
-        {
-            txtResultado.Text = "";
-            lblOperacao.Text = "";
-        }
-
         // Botao C
-        private void bntC_Click(object sender, EventArgs e)
+        private void BntC_Click(object sender, EventArgs e)
         {
             LimparTudo();
         }
 
         // Botao de Igual
-        private void btnIgual_Click(object sender, EventArgs e)
+        private void BtnIgual_Click(object sender, EventArgs e)
         {
 
             if (txtResultado.Text != "")
@@ -223,7 +216,6 @@ namespace Calculadora_C_
         {
             txtResultado.Text = "";
             lblOperacao.Text = "";
-            Valor = 0;
         }
     }
 }
