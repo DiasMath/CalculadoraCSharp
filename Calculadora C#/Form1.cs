@@ -23,117 +23,117 @@ namespace Calculadora_C_
         }
 
         // Botao Ponto
-        private void button17_Click(object sender, EventArgs e)
+        private void btnPonto_Click(object sender, EventArgs e)
         {
             AtribuirValorBotao(".");
         }
 
         // Botao 0
-        private void button16_Click(object sender, EventArgs e)
+        private void btnZero_Click(object sender, EventArgs e)
         {
 
             AtribuirValorBotao("0");
         }
 
         // Botao 1
-        private void button11_Click(object sender, EventArgs e)
+        private void btnUm_Click(object sender, EventArgs e)
         {
             AtribuirValorBotao("1");
         }
 
         // Botao 2
-        private void button12_Click(object sender, EventArgs e)
+        private void btnDois_Click(object sender, EventArgs e)
         {
 
             AtribuirValorBotao("2");
         }
 
         // Botao 3
-        private void button13_Click(object sender, EventArgs e)
+        private void btnTres_Click(object sender, EventArgs e)
         {
 
             AtribuirValorBotao("3");
         }
 
         // Botao 4
-        private void button10_Click(object sender, EventArgs e)
+        private void btnQuatro_Click(object sender, EventArgs e)
         {
 
             AtribuirValorBotao("4");
         }
 
         // Botao 5
-        private void button9_Click(object sender, EventArgs e)
+        private void btnCinco_Click(object sender, EventArgs e)
         {
 
             AtribuirValorBotao("5");
         }
 
         // Botao 6
-        private void button8_Click(object sender, EventArgs e)
+        private void btnSeis_Click(object sender, EventArgs e)
         {
 
             AtribuirValorBotao("6");
         }
 
         // Botao 7
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSete_Click(object sender, EventArgs e)
         {
 
             AtribuirValorBotao("7");
         }
 
         // Botao 8
-        private void button2_Click(object sender, EventArgs e)
+        private void btnOito_Click(object sender, EventArgs e)
         {
 
             AtribuirValorBotao("8");
         }
 
         // Botao 9
-        private void button3_Click(object sender, EventArgs e)
+        private void btnNove_Click(object sender, EventArgs e)
         {
 
             AtribuirValorBotao("9");
         }
 
-        // Botao de Soma
-        private void button4_Click(object sender, EventArgs e)
+        // Botao de Adição
+        private void btnAdicao_Click(object sender, EventArgs e)
         {
 
             ValidarOperacao("soma", "+");
         }
 
         // Botao de Subtração
-        private void button7_Click(object sender, EventArgs e)
+        private void btnSubtracao_Click(object sender, EventArgs e)
         {
 
             ValidarOperacao("subtracao", "-");
         }
 
         // Botao de Multiplicação
-        private void button14_Click(object sender, EventArgs e)
+        private void btnMult_Click(object sender, EventArgs e)
         {
 
             ValidarOperacao("mult", "X");
         }
 
         // Botao de Divisão
-        private void button18_Click(object sender, EventArgs e)
+        private void btnDivisao_Click(object sender, EventArgs e)
         {
 
             ValidarOperacao("divisao", "/");
         }
 
         // Botao CE
-        private void button5_Click(object sender, EventArgs e)
+        private void btnCE_Click(object sender, EventArgs e)
         {
             txtResultado.Text = "";
             lblOperacao.Text = "";
         }
 
         // Botao C
-        private void button6_Click(object sender, EventArgs e)
+        private void bntC_Click(object sender, EventArgs e)
         {
             txtResultado.Text = "";
             lblOperacao.Text = "";
@@ -142,7 +142,7 @@ namespace Calculadora_C_
         }
 
         // Botao de Igual
-        private void button15_Click(object sender, EventArgs e)
+        private void btnIgual_Click(object sender, EventArgs e)
         {
 
             if(txtResultado.Text != "")
