@@ -11,7 +11,7 @@
  * Criação do layout da calculadora;
  * Uso do GIT para controlar o versionamento do código.
 
-# Layout e Demonstração do Projeto no Win Forms
+# Layout e Demonstração do Projeto
 
 ![Animação](https://github.com/DiasMath/CalculadoraCSharp/assets/92406256/ffad8df0-201b-4b63-add3-3e61b0ada351)
 
