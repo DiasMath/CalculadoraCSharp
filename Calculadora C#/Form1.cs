@@ -13,26 +13,42 @@ namespace Calculadora_C_
 {
     public partial class Corpo : Form
     {
-        // Variaveis
-        decimal valor1 = 0, valor2 = 0;
-        string operacao = "";
+        public decimal Resultado { get; set; }
+
+        public decimal Valor { get; set; }
+
+        private Operacao OperacaoSelecionada { get; set; }
+
+        public enum Operacao
+        {
+            Adicao,
+            Subtracao,
+            Multiplicacao,
+            Divisao
+        }
 
         public Corpo()
         {
             InitializeComponent();
         }
 
-        // Botao Ponto
-        private void btnPonto_Click(object sender, EventArgs e)
+        // Botao Virgula
+        private void btnVirgula_Click(object sender, EventArgs e)
         {
-            AtribuirValorBotao(".");
+            if (!txtResultado.Text.Contains(","))
+            {
+                AtribuirValorBotao(",");
+            }
         }
 
         // Botao 0
         private void btnZero_Click(object sender, EventArgs e)
         {
 
-            AtribuirValorBotao("0");
+            if (txtResultado.Text == "" || txtResultado.Text != "0")
+            {
+                AtribuirValorBotao("0");
+            }
         }
 
         // Botao 1
@@ -101,28 +117,28 @@ namespace Calculadora_C_
         private void btnAdicao_Click(object sender, EventArgs e)
         {
 
-            ValidarOperacao("soma", "+");
+            ValidarOperacao(Operacao.Adicao, "+");
         }
 
         // Botao de Subtração
         private void btnSubtracao_Click(object sender, EventArgs e)
         {
 
-            ValidarOperacao("subtracao", "-");
+            ValidarOperacao(Operacao.Subtracao, "-");
         }
 
         // Botao de Multiplicação
         private void btnMultiplicacao_Click(object sender, EventArgs e)
         {
 
-            ValidarOperacao("mult", "X");
+            ValidarOperacao(Operacao.Multiplicacao, "X");
         }
 
         // Botao de Divisão
         private void btnDivisao_Click(object sender, EventArgs e)
         {
 
-            ValidarOperacao("divisao", "/");
+            ValidarOperacao(Operacao.Divisao, "/");
         }
 
         // Botao CE
@@ -135,65 +151,66 @@ namespace Calculadora_C_
         // Botao C
         private void bntC_Click(object sender, EventArgs e)
         {
-            txtResultado.Text = "";
-            lblOperacao.Text = "";
-            valor1 = 0;
-            valor2 = 0;
+            LimparTudo();
         }
 
         // Botao de Igual
         private void btnIgual_Click(object sender, EventArgs e)
         {
 
-            if(txtResultado.Text != "")
+            if (txtResultado.Text != "")
             {
-                valor2 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
-
-                switch (operacao)
+                switch (OperacaoSelecionada)
                 {
-                    case ("soma"):
+                    case Operacao.Adicao:
                         {
-                            txtResultado.Text = Convert.ToString(valor1 + valor2);
+                            Resultado = Valor + Convert.ToDecimal(txtResultado.Text);
                         }
                         break;
-                    case ("subtracao"):
+                    case Operacao.Subtracao:
                         {
-                            txtResultado.Text = Convert.ToString(valor1 - valor2);
+                            Resultado = Valor - Convert.ToDecimal(txtResultado.Text);
                         }
                         break;
-                    case ("mult"):
+                    case Operacao.Multiplicacao:
                         {
-                            txtResultado.Text = Convert.ToString(valor1 * valor2);
+                            Resultado = Valor * Convert.ToDecimal(txtResultado.Text);
                         }
                         break;
-                    case ("divisao"):
+                    case Operacao.Divisao:
                         {
-                            txtResultado.Text = Convert.ToString(valor1 / valor2);
+                            Resultado = Valor / Convert.ToDecimal(txtResultado.Text);
                         }
                         break;
                     default:
                         {
-                            MessageBox.Show("Informe um valor para realizar a operação.");
+                            MessageBox.Show("Erro! Informe um valor!");
                         }
                         break;
                 }
 
+                lblOperacao.Text = "=";
+                txtResultado.Text = Convert.ToString(Resultado);
+            }
+            else
+            {
+                MessageBox.Show("Realize uma operação antes!");
             }
         }
 
-        public void ValidarOperacao(string nomeOperacao, string simboloOperacao)
+        public void ValidarOperacao(Operacao operacao, string simboloOperacao)
         {
             if (txtResultado.Text != "")
             {
-                valor1 = decimal.Parse(txtResultado.Text, CultureInfo.InvariantCulture);
+                Valor = Convert.ToDecimal(txtResultado.Text);
                 txtResultado.Text = "";
-                operacao = nomeOperacao;
+                OperacaoSelecionada = operacao;
                 lblOperacao.Text = simboloOperacao;
 
             }
             else
             {
-                MessageBox.Show("Informe um valor para realizar a operação.");
+                MessageBox.Show($"Para realizar uma {operacao}, informe um valor.");
             }
         }
 
@@ -201,7 +218,12 @@ namespace Calculadora_C_
         {
             txtResultado.Text += valorBotao;
         }
+
+        public void LimparTudo()
+        {
+            txtResultado.Text = "";
+            lblOperacao.Text = "";
+            Valor = 0;
+        }
     }
 }
-
-

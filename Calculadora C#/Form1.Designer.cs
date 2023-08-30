@@ -234,9 +234,9 @@
             this.btnPonto.Name = "btnPonto";
             this.btnPonto.Size = new System.Drawing.Size(64, 50);
             this.btnPonto.TabIndex = 18;
-            this.btnPonto.Text = ".";
+            this.btnPonto.Text = ",";
             this.btnPonto.UseVisualStyleBackColor = true;
-            this.btnPonto.Click += new System.EventHandler(this.btnPonto_Click);
+            this.btnPonto.Click += new System.EventHandler(this.btnVirgula_Click);
             // 
             // btnDivisao
             // 
